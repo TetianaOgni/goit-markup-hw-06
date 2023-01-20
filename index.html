@@ -430,10 +430,30 @@
         </div>
         <div class="footer-container-mail">
           <p class="footer-title text">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                class="footer-form-email"
+                name="user_email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-form-btn button">
+              Subscribe
+              <!-- <svg class="footer-plane-icon" width="24" height="20">
+                <use href="./images/icons.svg#plane-icon-footer"></use>
+              </svg> -->
+            </button>
+            <svg class="footer-plane-icon" width="24" height="20">
+              <use href="./images/icons.svg#plane-icon-footer"></use>
+            </svg>
+          </form>
         </div>
       </div>
     </footer>
 
+    <!-----Modal----->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-container">
         <button type="button" class="close-btn-modal" data-modal-close>
@@ -441,8 +461,10 @@
             <use href="./images/icons.svg#close-btn-modal"></use>
           </svg>
         </button>
-        <form class="modal-form-hero">
-          <p class="subtitle">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <p class="modal-form-mission">
+            Leave your contacts and we will call you back
+          </p>
 
           <label class="modal-form-label">
             <span class="modal-text">Name</span>
@@ -498,14 +520,15 @@
           </label>
 
           <input
-            class="modal-check-input visually-hidden"
             type="checkbox"
+            class="modal-check-input visually-hidden"
             name="user_policy"
             id="user_checkbox"
+            value="true"
           />
           <label class="modal-check-label modal-text" for="user_checkbox"
-            >I accept the terms and conditions of the&nbsp
-            <a href="">Privacy Policy</a></label
+            >I accept the terms and conditions of the&nbsp;
+            <a href="" class="modal-form-link">Privacy Policy</a></label
           >
 
           <button type="submit" class="modal-send-btn button">Send</button>
