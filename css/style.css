@@ -174,6 +174,10 @@ img {
   transition: color var(--transition-dur-and-func);
 }
 
+.header-link.current {
+  color: var(--primary-brand-color);
+}
+
 .header-link.current::after {
   content: "";
   position: absolute;
@@ -380,7 +384,7 @@ img {
   align-items: center;
   justify-content: center;
 
-  transition: backgroung-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .team-icon-link:hover,
@@ -586,7 +590,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition: backgroung-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .footer-icon-svg {
@@ -599,14 +603,9 @@ img {
 }
 
 .footer-form {
-  position: relative;
   display: flex;
+  gap: 24px;
   align-items: center;
-}
-
-.footer-form-label {
-  display: inline-block;
-  margin-right: 24px;
 }
 
 .footer-form-email {
@@ -638,17 +637,12 @@ img {
 }
 
 .footer-form-btn {
+  display: flex;
+  gap: 16px;
+
   min-width: 165px;
   height: 40px;
-  padding: 8px 64px 8px 24px;
-}
-
-.footer-plane-icon {
-  position: absolute;
-  bottom: 0;
-  right: 24px;
-
-  transform: translateY(-50%);
+  padding: 8px 24px 8px 24px;
 }
 
 /* -----Modal----- */
@@ -745,8 +739,8 @@ img {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
   color: var(--light-slate-color);
 
   margin-bottom: 4px;
@@ -839,8 +833,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 
-  cursor: pointer;
   fill: var(--contrast-color);
+  cursor: pointer;
 }
 
 .modal-form-link {
